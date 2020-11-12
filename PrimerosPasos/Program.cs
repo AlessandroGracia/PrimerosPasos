@@ -64,7 +64,13 @@ namespace PrimerosPasos
             Console.WriteLine("liquido a recibir para juan {0}", calcularsueldo(300, 200));
             Console.WriteLine("liquido a recibir para Pedro {0}", calcularsueldo(3000, 1520));
             Console.WriteLine("liquido a recibir para Alessandro {0}", calcularsueldo(1000,150));
-            
+            Console.WriteLine("      *      ");
+            Console.WriteLine("     ***     ");
+            Console.WriteLine("    *****    ");
+            Console.WriteLine("   *******   ");
+            Console.WriteLine("El cuadrado es: {0}", (a * a));
+
+
             Console.ReadKey();
         }
         //Funciones: subprocesos - Subprogramas - rutinas
@@ -85,9 +91,34 @@ namespace PrimerosPasos
         static int calcularsueldo(int ingreso, int egreso)
         {
             return (ingreso - egreso);
+        }
+        //crear la funcion que imprima la siguiente figura
+        //    *
+        //   ***
+        //  *****
+        // *******
+        static void Figura(string figura)
+        {
+            Console.WriteLine(figura);
+            Console.WriteLine("      *      ");
+            Console.WriteLine("     ***     ");
+            Console.WriteLine("    *****    ");
+            Console.WriteLine("   *******   ");
+        }
 
+        static int cuadrado(int a)
+        {
+            
+            Console.WriteLine("El cuadrado es: {0}",(a*a));
+            int cuadrado = a* a;
+            return cuadrado;
 
         }
 
+
+
+
     }
+    
+
 }
