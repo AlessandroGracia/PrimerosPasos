@@ -68,8 +68,25 @@ namespace PrimerosPasos
             Console.WriteLine("     ***     ");
             Console.WriteLine("    *****    ");
             Console.WriteLine("   *******   ");
-            Console.WriteLine("El cuadrado es: {0}", (a * a));
+            Console.WriteLine("El cuadrado de 10 es : {0}", (a * a));
+            //Imprimir par entre 1 y 10
+            for(int i=1; i<=10;i++)
+            {
 
+                if (esPar(i) == 1)
+                    Console.WriteLine("{0} es par", i);
+
+            }
+           //IMprimir Tabla de multiplicar
+            for(int i=1;i<=10;i++)
+            {
+                if (esPar(i) == 1)
+                    Console.WriteLine("{0}es par", i);
+            }
+            Console.WriteLine("Tablas de multiplicar");
+            tabla(6);
+            Console.WriteLine();
+            tabla(5);
 
             Console.ReadKey();
         }
@@ -109,16 +126,33 @@ namespace PrimerosPasos
         static int cuadrado(int a)
         {
             
-            Console.WriteLine("El cuadrado es: {0}",(a*a));
+            Console.WriteLine("El cuadrado de 10 es : {0}",(a*a));
             int cuadrado = a* a;
             return cuadrado;
 
         }
+        
+        static int esPar(int n)
+        {
+            if (n % 2 == 0)
+                return 1;
+            else
+                return -1;
 
+            // return (n % 2 == 0 ? 1 : -1);
 
+        }
+        static void tabla(int n)
 
+        {
+            for (int i = 1; i <= 12; i++)
+            {
 
-    }
-    
+                Console.WriteLine("{0} x {1}= {2}", n, i, (n * i));
+            }
 
+        }
+
+    }   
 }
+
